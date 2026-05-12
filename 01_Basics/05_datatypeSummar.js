@@ -29,3 +29,24 @@ const myFun = function(){
     console.log("Hello");
 };   // function
 
+// *********************** MEMORY **********************
+
+/*
+Stack - Primitive 
+Heap - Non primitive
+*/
+let ytName = "Sumit Vlogs"
+let anotherName = ytName
+anotherName = "Sumit Creates"
+
+console.log(ytName) // Sumit Vlogs
+console.log(anotherName)  // Sumit Creates
+
+// now heap example
+
+let userOne = {
+ email : "userone@gmail.com",
+ upi : "userone@axis"
+}
+
+let userTwo = userOne // Same Refernece for Userone
