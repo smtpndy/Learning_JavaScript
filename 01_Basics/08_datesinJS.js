@@ -10,6 +10,19 @@ console.log(myDate);
 console.log(myDate.toString());
 console.log(myDate.toDateString());
 console.log(myDate.toLocaleString());
+let myDate2 = new Date(2023,0,20,5,6);
+console.log(myDate2.toLocaleString());
+
+let myTime = Date.now();
+console.log(myDate2.getTime());
+console.log(myTime);
+console.log(Math.floor(Date.now()/1000));  // into seconds
+
+myDate.toLocaleString('default',{
+  weekday : "narrow",
+  dateStyle : "long"
+})
+
 
 
 
